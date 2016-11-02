@@ -1,0 +1,28 @@
+Realizar un script que contenga todos los códigos vistos en clases y desafíos hasta el día de hoy.
+
+1.- Crear un menu
+  |---------------------------------------|
+  | Menu de opciones                      |
+  |                                       |
+  | 1.- Uso de puts   
+puts "Hello World”                     |
+  | 2.- Impresion de nombre 
+
+print "Enter your name: "
+name = gets
+puts "Hello #{name}"    
+          |
+  | 3.- Mayor de 5 numeros                |
+  | 4.- Impresion de 100 numeros impares 
+100.times do |n|  numero = n + 1   puts numero if is_par?(numero)end 
+  | 5.- Impresion de 10 numeros selectos  |
+arr = Array.new(10) { rand(1..1000) }
+  | 6.- Cuadro magico                     |
+  | 7.- Orden 100 numeros
+
+require 'pry'def is_mayor?(a, b)  a > b ? true : falseendarr= Array.new(10) { rand(1..1000) }mayor = arr.firstmayor_index = 0arr_order = []while arr_order.length < 10  10.times do |n|    if is_mayor?(arr[n], mayor)      mayor = arr[n]      mayor_index = n    end  end  arr[mayor_index] = 0  arr_order << mayor  mayor = 0endbinding.pry                 |
+  |                                       |
+  | Que accion deseas ejecutar  _         |
+  -----------------------------------------
+
+2.- Subir código a github realizar rama develop y apartir de esta generar una rama nueva por cada opción del menú generar los pull request necesarios para que developt contenga todos los códigos funcionales.
